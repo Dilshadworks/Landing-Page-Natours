@@ -27,6 +27,12 @@
             &-1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
             }
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+            }
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+            }
         }
     }
     &:hover &__side--front{
@@ -43,16 +49,19 @@
         background-blend-mode: screen;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); 
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-        
+        border-top-left-radius: 3px;
+        border-top-left-radius: 3px;
         &--1{
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
             url(../../images/about-us-image-2.jpg); 
         }
         &--2{
-            background-image: url(../../images/about-us-image-2.jpg); 
+            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+            url(../../images/about-us-image-1.jpg); 
         }
         &--3{
-            background-image: url(../../images/about-us-image-2.jpg); 
+            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+            url(../../images/about-us-image-2.jpg); 
         }
     }
     &__heading{
@@ -73,6 +82,11 @@
             background-image: linear-gradient(to right bottom, 
             rgba($color-secondary-light, .85), 
             rgba($color-secondary-dark, .85));
+        }
+        &--2{
+            background-image: linear-gradient(to right bottom, 
+            rgba($color-primary-light, .85), 
+            rgba($color-primary-dark, .85));
         }
     }
 
