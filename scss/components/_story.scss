@@ -1,4 +1,4 @@
-.story{
+.story {
     width: 75%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba($color-black, 0.1);
@@ -8,8 +8,15 @@
     padding-left: 9rem;
     font-size: $default-font-size;
     transform: skewX(-12deg);
-    
-    &__shape{
+    @include respond(phone) {
+        width: 100%;
+        padding: 4rem;
+        padding-left: 7rem;
+    }
+    @include respond(phone) {
+        transform: skewX(0);
+    }
+    &__shape {
         width: 15rem;
         height: 15rem;
         background-color: orangered;
@@ -20,24 +27,27 @@
         clip-path: circle(50% at 50% 50%);
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+        @include respond(phone) {
+            transform: translateX(-3rem) skewX(0);
+        }
     }
-
-    &__img{
+    &__img {
         height: 100%;
         transform: scale(1.5);
         backface-visibility: hidden;
         transition: all .5s;
     }
-    &:hover &__img{
+    &:hover &__img {
         transform: scale(1);
         filter: blur(3px) brightness(80%);
     }
-
-    &__text{
+    &__text {
         transform: skewX(12deg);
+        @include respond(phone) {
+            transform: skewX(0);
+        }
     }
-
-    &__caption{
+    &__caption {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -50,8 +60,7 @@
         transition: all .5s;
         backface-visibility: hidden;
     }
-
-    &:hover &__caption{
+    &:hover &__caption {
         opacity: 1;
         transform: translate(-50%, -50%);
     }
