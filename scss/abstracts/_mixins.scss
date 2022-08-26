@@ -36,25 +36,25 @@ ORDER: BASE + TYPOFRAPHY > GENERAL LAYOUT + GRID > PAGE LAYOUT > COMPONENT
     @if $breakpoint==phone {
         @media (max-width: 37.5em) {
             // 600px
-            @content
+            @content;
         }
     }
     @if $breakpoint==tab-port {
         @media (max-width: 56.25em) {
             // 900px
-            @content
+            @content;
         }
     }
     @if $breakpoint==tab-land {
         @media (max-width: 75em) {
             // 1200px
-            @content
+            @content;
         }
     }
     @if $breakpoint==desktop {
         @media (min-width: 112.5em) {
             // 1800px
-            @content
+            @content;
         }
     }
 }

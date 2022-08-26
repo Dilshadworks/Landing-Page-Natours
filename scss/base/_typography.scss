@@ -30,7 +30,7 @@ body {
         letter-spacing: 1.7rem;
         animation: moveInRight 1s ease-out;
         @include respond(phone) {
-            letter-spacing: .5rem;
+            letter-spacing: 0.5rem;
         }
     }
 }
@@ -40,12 +40,12 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    background-image: linear-gradient( to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    letter-spacing: .2rem;
-    transition: all .2s;
+    letter-spacing: 0.2rem;
+    transition: all 0.2s;
     @include respond(tab-port) {
         font-size: 3rem;
     }
@@ -54,7 +54,7 @@ body {
     }
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
-        text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+        text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
     }
 }
 

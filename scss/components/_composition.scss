@@ -6,7 +6,7 @@
         border-radius: 0px;
         position: absolute;
         z-index: 10;
-        transform: all .2s;
+        transform: all 0.2s;
         outline-offset: 0rem;
         @include respond(tab-port) {
             float: left;
@@ -43,11 +43,11 @@
         &:hover {
             outline: 1.5rem solid $color-primary;
             transform: scale(1.05);
-            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, 0.5);
             z-index: 20;
         }
     }
     &:hover &_photo:not(:hover) {
-        transform: scale(.95);
+        transform: scale(0.95);
     }
 }
