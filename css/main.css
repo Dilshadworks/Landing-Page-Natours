@@ -817,7 +817,7 @@ body {
     height: auto; }
   .footer__navigation {
     border-top: 1px solid #777;
-    padding: 2rem 0;
+    padding: 3rem 0;
     display: inline-block; }
     @media (max-width: 56.25em) {
       .footer__navigation {
